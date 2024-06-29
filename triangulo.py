@@ -1,9 +1,8 @@
 import tkinter as tk
 
 def triangulo(nivel, canvas, pontas, ponta_esq, ponta_dir,  x1, y1, x2, y2, x3, y3):
-    if nivel == 1:
-        canvas.create_polygon([x1, y1, x2, y2, x3, y3], outline='black', fill='blue')
-        return
+    if nivel == 0:
+       return
     canvas.create_polygon([x1, y1, x2, y2, x3, y3], outline='black', fill='blue')
     if pontas:
         nivel -= 1
